@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: service-eureka
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka-master:5600/eureka
+  instance:
+    prefer-ip-address: false
+    hostname: eureka-master
+    instance-id: ${spring.application.name}:${server.port}
+  server:
+    enable-self-preservation: false
+server:
+  port: 5600

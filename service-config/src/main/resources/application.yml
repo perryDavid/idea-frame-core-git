@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: service-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/perryDavid/Test
+          username: 294837971@qq.com
+          password: wyc6621602977
+server:
+  port: 8081
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-master:5600/eureka
+    fetch-registry: true
+    register-with-eureka: true
